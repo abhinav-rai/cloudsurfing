@@ -1,0 +1,72 @@
+<template name="ApplicationLayout">
+
+	<head>
+    
+    <title>Cloudsurfing</title>
+  </head>
+
+<body>
+	<div id="appwrap">
+		<header role="banner">
+			<nav id="navbar-primary" class="navbar" role="navigation">
+ 				<!-- <div class="container-fluid"> -->
+ 					<div class="navbar-brand">
+ 						CLOUDSURFING
+ 					</div>
+    				<!-- Brand and toggle get grouped for better mobile display -->
+    				<div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-primary-collapse">
+					    <ul class="nav navbar-nav">
+					      	<li class="active"><a href="#">ABOUT</a></li>
+					        <li><a href="#">MUSIC</a></li>
+					        <li><a href="#" id="nav-logo"><img id="nav-title" src="logo.png" width="200" alt="Logo Thing main logo"></a></li>
+					        <li><a href="#">TOUR</a></li>
+					        <li><a href="#">STORE</a></li>
+					    </ul>
+					</div><!-- /.navbar-collapse -->
+				<!-- </div> --><!-- /.container-fluid -->
+			</nav>
+		</header><!-- header role="banner" -->
+       
+
+      	<div id="content">
+      		{{> yield}} 
+      	</div>
+
+
+
+    <div class="footer">
+    	<div class="col-md-7">
+    	
+    	</div>
+    	<div class="col-md-1">
+            <!-- <div class="copyright">
+              Copyright ©2015 Cloudsurfing.
+            </div> -->
+        </div>
+        <div class="col-md-4">
+          <div class="icons">
+            <ul class="list-inline center-block">
+              <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              <li><a href="#"><i class="fa fa-spotify"></i></a></li>
+              <li><a href="#"><i class="fa fa-apple"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+<!--               <li><a href="#" class="mail">SIGN UP</a></li> -->
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+  </body>
+
+</template>
