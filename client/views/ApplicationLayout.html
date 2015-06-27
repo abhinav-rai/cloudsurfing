@@ -1,11 +1,41 @@
 <template name="ApplicationLayout">
 
 	<head>
-    
+
     <title>Cloudsurfing</title>
   </head>
 
 <body>
+
+<!-- <div id="bg_container">
+  <iframe width="960" height="585" id="bg" src="https://player.vimeo.com/video/129484670?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1" frameborder="0"></iframe>
+</div>
+ -->
+ <style>
+.video {
+    width: 100%;
+    position: relative;
+}
+
+.video > .video-height {
+    padding-top: 60.7%;
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clear {
+  pointer-events: none;
+}
+
+</style>
+
+<div id="content">
 	<div id="appwrap">
 		<header role="banner">
 			<nav id="navbar-primary" class="navbar" role="navigation">
@@ -34,17 +64,23 @@
 				<!-- </div> --><!-- /.container-fluid -->
 			</nav>
 		</header><!-- header role="banner" -->
-       
+<!-- <div class="clear">
+<div class="video">
+    <span class="video-height"></span>
+     <iframe width="1920" height="1165" src="https://www.youtube.com/embed/NsLh3LV4Vs0?
+controls=0&loop=1&autoplay=1&showinfo=0&modestbranding=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+</div> -->
 
       	<div id="content">
-      		{{> yield}} 
+      		{{> yield}}
       	</div>
 
 
 
     <div class="footer">
     	<div class="col-md-7">
-    	
+
     	</div>
     	<div class="col-md-1">
             <!-- <div class="copyright">
@@ -63,10 +99,11 @@
             </ul>
           </div>
         </div>
-        
+
       </div>
     </div>
-  
+  </div>
+
   </body>
 
 </template>
