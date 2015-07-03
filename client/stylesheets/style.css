@@ -27,25 +27,39 @@ body{
   z-index: 111;
   left: 0px;
   top: 0px;
-  /*width: 1704.62px;
-  height: 958px;*/
-  width: 104.85%;
-  height: 125.8%;
 }
 #appwrap {position: absolute; z-index: 300; top: 0px; bottom: 0px; width: 100%}
 
-@media (max-width: 1285px) {
+/* Large Screens */
+@media (min-width: 1285px) {
   #background .video iframe {
-    width: 104.85%;
-    height: 125.8%;
+    width: 2000px;
+    height: 1265px;
   }
 }
 
-@media (min-width: 1285px) {
+/* normal laptop */
+@media (max-width: 1285px) {
   #background .video iframe {
-    width: 100.00%;
-    height: 125.8%;
+    width: 1500px;
+    height: 945px;
   }
+}
+
+/* Large phones */
+@media (max-width: 770px) {
+  #background .video iframe {
+    width: 1583.5px;
+    height: 1000.0px;
+  }
+}
+
+@media (max-width: 485px) {
+  #background .video iframe {
+    width: 1342.5px;
+    height: 850.0px;
+  }
+
 }
 
 
