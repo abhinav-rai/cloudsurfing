@@ -4,7 +4,7 @@ body{
   font-family: 'Roboto', sans-serif;
   color: #fff;
   margin-bottom: 60px;
-  background: url(bg-clouds-2.png) no-repeat center center fixed;
+  background: url('background.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,10 +19,10 @@ body{
   top: 0px;
   width: 100%;
   height: 100%;
-  background: url('bg-clouds-2.png') center center no-repeat fixed;
+  background: url('background.png') center center no-repeat fixed;
   background-size: cover;
 }
-#background .video iframe {
+#background .video video {
   position: absolute;
   z-index: 111;
   left: 0px;
