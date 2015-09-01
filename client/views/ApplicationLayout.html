@@ -1,88 +1,59 @@
 <template name="ApplicationLayout">
 
-	<head>
+  <head>
 
     <title>Cloudsurfing</title>
   </head>
 
 <body>
+  <div id="background">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/hPQegXZd02I?autoplay=1&loop=1&
+controls=0&showinfo=0&modestbranding=1&vq=hd1080&playlist=ns2X4tRsYWY" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+    </div>
+    <!-- <div class="overlay"></div> -->
+  </div>
+  <div id="appwrap">
+    <header role="banner">
+      <nav id="navbar-primary" class="navbar" role="navigation">
+        <!-- <div class="container-fluid"> -->
+          <div class="navbar-brand">
+            CLOUDSURFING
+          </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="about">ABOUT</a></li>
+                  <li><a href="music">MUSIC</a></li>
+                  <li><a href="/" id="nav-logo"><img id="nav-title" src="logo.png" width="200" alt="Logo Thing main logo"></a></li>
+                  <li><a href="#">TOUR</a></li>
+                  <li><a href="#">STORE</a></li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        <!-- </div> --><!-- /.container-fluid -->
+      </nav>
+    </header><!-- header role="banner" -->
 
-<!-- <div id="bg_container">
-  <iframe width="960" height="585" id="bg" src="https://player.vimeo.com/video/129484670?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1" frameborder="0"></iframe>
-</div>
- -->
- <style>
-.video {
-    width: 100%;
-    position: relative;
-}
 
-.video > .video-height {
-    padding-top: 60.7%;
-    display: block;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.clear {
-  pointer-events: none;
-}
-
-</style>
-
-<div id="content">
-	<div id="appwrap">
-		<header role="banner">
-			<nav id="navbar-primary" class="navbar" role="navigation">
- 				<!-- <div class="container-fluid"> -->
- 					<div class="navbar-brand">
- 						CLOUDSURFING
- 					</div>
-    				<!-- Brand and toggle get grouped for better mobile display -->
-    				<div class="navbar-header">
-					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					    </button>
-					</div>
-					<div class="collapse navbar-collapse" id="navbar-primary-collapse">
-					    <ul class="nav navbar-nav">
-					      	<li class="active"><a href="#">ABOUT</a></li>
-					        <li><a href="#">MUSIC</a></li>
-					        <li><a href="#" id="nav-logo"><img id="nav-title" src="logo.png" width="200" alt="Logo Thing main logo"></a></li>
-					        <li><a href="#">TOUR</a></li>
-					        <li><a href="#">STORE</a></li>
-					    </ul>
-					</div><!-- /.navbar-collapse -->
-				<!-- </div> --><!-- /.container-fluid -->
-			</nav>
-		</header><!-- header role="banner" -->
-<!-- <div class="clear">
-<div class="video">
-    <span class="video-height"></span>
-     <iframe width="1920" height="1165" src="https://www.youtube.com/embed/NsLh3LV4Vs0?
-controls=0&loop=1&autoplay=1&showinfo=0&modestbranding=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
-</div> -->
-
-      	<div id="content">
-      		{{> yield}}
-      	</div>
+        <div id="content">
+          {{> yield}}
+        </div> <!-- content -->
 
 
 
     <div class="footer">
-    	<div class="col-md-7">
+      <div class="col-md-7">
 
-    	</div>
-    	<div class="col-md-1">
+      </div>
+      <div class="col-md-1">
             <!-- <div class="copyright">
               Copyright ©2015 Cloudsurfing.
             </div> -->
@@ -102,7 +73,6 @@ controls=0&loop=1&autoplay=1&showinfo=0&modestbranding=1" frameborder="0" webkit
 
       </div>
     </div>
-  </div>
 
   </body>
 
