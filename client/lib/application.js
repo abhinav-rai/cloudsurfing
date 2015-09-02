@@ -24,6 +24,9 @@ Template.music.rendered = function(){
     return ((n % m) + m) % m;
   }
 
+  document.getElementById("current_track").onended = function() {
+    $("#next_song").click();
+  };
 
   $('#play_pause').click(function() {
       if (isSongCurrentlyPlaying()) {
