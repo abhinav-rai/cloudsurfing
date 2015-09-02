@@ -32,7 +32,7 @@ body{
 
 /* Large Screens */
 @media (min-width: 1285px) {
-  #background .video iframe {
+  #background .video video {
     width: 2000px;
     height: 1265px;
   }
@@ -40,7 +40,7 @@ body{
 
 /* normal laptop */
 @media (max-width: 1285px) {
-  #background .video iframe {
+  #background .video video {
     width: 1500px;
     height: 945px;
   }
@@ -48,14 +48,14 @@ body{
 
 /* Large phones */
 @media (max-width: 770px) {
-  #background .video iframe {
+  #background .video video {
     width: 1583.5px;
     height: 1000.0px;
   }
 }
 
 @media (max-width: 485px) {
-  #background .video iframe {
+  #background .video video {
     width: 1342.5px;
     height: 850.0px;
   }
@@ -356,3 +356,6 @@ li{
   /*width:100%;*/
   /*padding-bottom:50px;*/
 }
+
+#player{
+  float: right;}
